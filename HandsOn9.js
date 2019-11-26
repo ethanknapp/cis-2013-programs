@@ -16,7 +16,7 @@ var generate = function ()
 	
 	//validate user input that intCount is a number and intCount is not less than 2 or intCount not greater than 100
 	
-    if (isNaN(intCount)||intCOunt<1||intCOunt>100)
+    if (isNaN(intCount)||intCount<1||intCount>100)
     {
        $("total_fib").value = "";
        $("output").value = "please enter a valid number";
@@ -29,7 +29,7 @@ var generate = function ()
             k=i+j;
             i=j;
             j=k;
-            iuntCount--;
+            intCount--;
             stringOutput = stringOutput + " " + k;
         }
         $("output").value = stringOutput;
